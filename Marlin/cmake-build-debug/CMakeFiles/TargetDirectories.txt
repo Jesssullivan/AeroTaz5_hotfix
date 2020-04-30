@@ -1,2 +1,0 @@
-/home/jessdev/git/Taz/Marlin/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/jessdev/git/Taz/Marlin/cmake-build-debug/CMakeFiles/edit_cache.dir
