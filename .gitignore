@@ -1,0 +1,8 @@
+# ignores- intellij
+.idea
+Marlin/.idea
+Marlin/cmake-build-debug
+Marlin/CMakeLists.txt
+
+# ignore verbatim source for diffs:
+diffs
