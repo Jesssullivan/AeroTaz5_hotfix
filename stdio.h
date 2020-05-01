@@ -1,7 +1,6 @@
 /*
 
-   Jess S: renamed struct fpos_t to struct_fpos_t.
-	 replaced at ~/arduino-1.8.12/hardware/tools/avr/avr/include/stdio.h
+   Jess S: replaced at ~/arduino-1.8.12/hardware/tools/avr/avr/include/stdio.h
 
 
 	 Copyright (c) 2002, 2005, 2007 Joerg Wunsch
