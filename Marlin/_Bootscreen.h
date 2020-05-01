@@ -1,0 +1,8 @@
+//
+// Created by jessdev on 5/1/20.
+//
+
+#ifndef AEROTAZ5_HOTFIX__BOOTSCREEN_H
+#define AEROTAZ5_HOTFIX__BOOTSCREEN_H
+
+#endif //AEROTAZ5_HOTFIX__BOOTSCREEN_H
