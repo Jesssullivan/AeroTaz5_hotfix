@@ -1,9 +1,5 @@
-/**
- * Jess @ D&M bootscreen
- *
- */
-#pragma once
 
+#pragma once
 #define CUSTOM_BOOTSCREEN_BMPWIDTH  110
 
 const unsigned char custom_start_bmp[] PROGMEM = {
