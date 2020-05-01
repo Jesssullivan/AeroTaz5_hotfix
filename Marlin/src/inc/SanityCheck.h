@@ -264,7 +264,7 @@
   #error "EXTRUDER_[0123]_AUTO_FAN_PIN is now E[0123]_AUTO_FAN_PIN. Please update your Configuration_adv.h."
 #elif defined(PID_FAN_SCALING) && FAN_COUNT <= 0
   #error "PID_FAN_SCALING needs at least one fan enabled."
-#elif defined(min_software_endstops) || defined(max_software_endstops)
+#elif defined(_endstops) || defined(max_software_endstops)
   #error "(min|max)_software_endstops are now (MIN|MAX)_SOFTWARE_ENDSTOPS. Please update your configuration."
 #elif ENABLED(Z_PROBE_SLED) && defined(SLED_PIN)
   #error "Replace SLED_PIN with SOL1_PIN (applies to both Z_PROBE_SLED and SOLENOID_PROBE)."

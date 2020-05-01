@@ -1,8 +1,11 @@
-# ignores- intellij
-.idea
-Marlin/.idea
-Marlin/cmake-build-debug
-Marlin/CMakeLists.txt
+**.idea
+cmake-build-debug
+**/cmake-build-debug
+CMakeLists.txt
+**/CMakeLists.txt
+**.zip
 
 # ignore verbatim source for diffs:
 diffs
+old.Marlin
+
