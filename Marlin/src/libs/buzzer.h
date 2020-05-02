@@ -59,19 +59,19 @@
        * @brief Inverts the sate of a digital PIN
        * @details This will invert the current state of an digital IO pin.
        */
-      FORCE_INLINE static void invert() { TOGGLE(BEEPER_PIN_PIN); }
+      FORCE_INLINE static void invert() { TOGGLE(BEEPER_PIN); }
 
       /**
        * @brief Turn off a digital PIN
        * @details Alias of digitalWrite(PIN, LOW) using FastIO
        */
-      FORCE_INLINE static void off() { WRITE(BEEPER_PIN_PIN, LOW); }
+      FORCE_INLINE static void off() { WRITE(BEEPER_PIN, LOW); }
 
       /**
        * @brief Turn on a digital PIN
        * @details Alias of digitalWrite(PIN, HIGH) using FastIO
        */
-      FORCE_INLINE static void on() { WRITE(BEEPER_PIN_PIN, HIGH); }
+      FORCE_INLINE static void on() { WRITE(BEEPER_PIN, HIGH); }
 
       /**
        * @brief Resets the state of the class
@@ -87,7 +87,7 @@
        * @brief Class constructor
        */
       Buzzer() {
-        SET_OUTPUT(BEEPER_PIN_PIN);
+        SET_OUTPUT(BEEPER_PIN);
         reset();
       }
 

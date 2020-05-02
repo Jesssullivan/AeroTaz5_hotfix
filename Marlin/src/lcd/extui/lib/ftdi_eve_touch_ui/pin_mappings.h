@@ -48,7 +48,7 @@
   #define CLCD_SOFT_SPI_MISO  16               // PORTC0   BTN_ENC     Pin 2
   #define CLCD_MOD_RESET      11               // PORTD3   BTN_EN1     Pin 3
   #define CLCD_AUX_0          10               // PORTD2   BTN_EN2     Pin 5
-  #define CLCD_AUX_1          BEEPER_PIN_PIN       // PORTA4               Pin 1
+  #define CLCD_AUX_1          BEEPER_PIN       // PORTA4               Pin 1
 #endif
 
 /**
@@ -66,7 +66,7 @@
 
   #define CLCD_AUX_0                     LCD_PINS_ENABLE
   #define CLCD_AUX_1                     BTN_ENC
-  #define CLCD_AUX_2                     BEEPER_PIN_PIN
+  #define CLCD_AUX_2                     BEEPER_PIN
 
   #define CLCD_USE_SOFT_SPI
   #define CLCD_SOFT_SPI_SCLK             LCD_PINS_D7
@@ -107,7 +107,7 @@
   #define CLCD_USE_SOFT_SPI
   #define CLCD_SOFT_SPI_SCLK             BTN_ENC
   #define CLCD_SOFT_SPI_MOSI             LCD_PINS_D5
-  #define CLCD_SOFT_SPI_MISO             BEEPER_PIN_PIN
+  #define CLCD_SOFT_SPI_MISO             BEEPER_PIN
 #endif
 
 /**

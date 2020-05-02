@@ -250,8 +250,6 @@
   #error "BLTOUCH_V3 is obsolete. Please update your configuration."
 #elif defined(BLTOUCH_FORCE_OPEN_DRAIN_MODE)
   #error "BLTOUCH_FORCE_OPEN_DRAIN_MODE is obsolete. Please update your configuration."
-#elif defined(BEEPER_PIN)
-  #error "BEEPER_PIN is now BEEPER_PIN_PIN. Please update your pins definitions."
 #elif defined(SDCARDDETECT)
   #error "SDCARDDETECT is now SD_DETECT_PIN. Please update your pins definitions."
 #elif defined(STAT_LED_RED) || defined(STAT_LED_BLUE)

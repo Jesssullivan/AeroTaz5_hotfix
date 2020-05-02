@@ -768,10 +768,10 @@ inline void loud_kill(PGM_P const lcd_msg, const heater_ind_t heater) {
   marlin_state = MF_KILLED;
   #if USE_BEEPER_PIN
     for (uint8_t i = 20; i--;) {
-      WRITE(BEEPER_PIN_PIN, HIGH); delay(25);
-      WRITE(BEEPER_PIN_PIN, LOW); delay(80);
+      WRITE(BEEPER_PIN, HIGH); delay(25);
+      WRITE(BEEPER_PIN, LOW); delay(80);
     }
-    WRITE(BEEPER_PIN_PIN, HIGH);
+    WRITE(BEEPER_PIN, HIGH);
   #endif
   kill(lcd_msg, HEATER_PSTR(heater));
 }

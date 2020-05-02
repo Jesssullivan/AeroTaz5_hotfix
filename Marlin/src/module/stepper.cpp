@@ -2753,7 +2753,7 @@ void Stepper::report_positions() {
 
         static const uint8_t digipot_motor_current[] = DIGIPOT_MOTOR_CURRENT;
 
-        SPI.begin();`
+        SPI.begin();
         SET_OUTPUT(DIGIPOTSS_PIN);
 
         LOOP_L_N(i, COUNT(digipot_motor_current)) {

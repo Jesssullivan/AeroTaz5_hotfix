@@ -173,7 +173,7 @@ e-mail   :  support@circuitsathome.com
 #define memcmp_P(a, b, n) memcmp((a), (b), (n))
 #endif
 #ifndef memcpy_P
-#define memcpy_P(dest, src, num) memcpy((dest), (src), (num))
+#define memcpy_P(dest, , num) memcpy((dest), (), (num))
 #endif
 #ifndef memmem_P
 #define memmem_P(a, alen, b, blen) memmem((a), (alen), (b), (blen))
@@ -182,7 +182,7 @@ e-mail   :  support@circuitsathome.com
 #define memrchr_P(str, val, len) memrchr((str), (val), (len))
 #endif
 #ifndef strcat_P
-#define strcat_P(dest, src) strcat((dest), (src))
+#define strcat_P(dest, ) strcat((dest), ())
 #endif
 #ifndef strchr_P
 #define strchr_P(str, c) strchr((str), (c))
@@ -194,7 +194,7 @@ e-mail   :  support@circuitsathome.com
 #define strcmp_P(a, b) strcmp((a), (b))
 #endif
 #ifndef strcpy_P
-#define strcpy_P(dest, src) strcpy((dest), (src))
+#define strcpy_P(dest, ) strcpy((dest), ())
 #endif
 #ifndef strcasecmp_P
 #define strcasecmp_P(a, b) strcasecmp((a), (b))
@@ -203,10 +203,10 @@ e-mail   :  support@circuitsathome.com
 #define strcasestr_P(a, b) strcasestr((a), (b))
 #endif
 #ifndef strlcat_P
-#define strlcat_P(dest, src, len) strlcat((dest), (src), (len))
+#define strlcat_P(dest, , len) strlcat((dest), (), (len))
 #endif
 #ifndef strlcpy_P
-#define strlcpy_P(dest, src, len) strlcpy((dest), (src), (len))
+#define strlcpy_P(dest, , len) strlcpy((dest), (), (len))
 #endif
 #ifndef strlen_P
 #define strlen_P(s) strlen((const char *)(s))

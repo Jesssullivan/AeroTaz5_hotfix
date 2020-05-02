@@ -169,7 +169,7 @@ vc-fileutils.settings
 
 #cmake
 CMakeLists.txt
-src/CMakeLists.txt
+/CMakeLists.txt
 CMakeListsPrivate.txt
 
 #CLion
