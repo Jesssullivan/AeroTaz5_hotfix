@@ -25,7 +25,7 @@
  * Traditional Chinese
  *
  * LCD Menu Messages
- * See also http://marlinfw.org/docs/development/lcd_language.html
+ * See also http://marlin.org/docs/development/lcd_language.html
  *
  */
 namespace Language_zh_TW {
