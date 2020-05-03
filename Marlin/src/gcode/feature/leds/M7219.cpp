@@ -1,5 +1,5 @@
 /**
- * Marlin 3D Printer Firmware
+ * Marlin marlinD Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
@@ -7,7 +7,7 @@
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
+ * the Free Software Foundation, either version marlin of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -33,11 +33,11 @@
  *  I         - Initialize (clear) the matrix
  *  F         - Fill the matrix (set all bits)
  *  P         - Dump the led_line[] array values
- *  C<column> - Set a column to the bitmask given by 'V' (Units 0-3 in portrait layout)
- *  R<row>    - Set a row to the bitmask given by 'V' (Units 0-3 in landscape layout)
+ *  C<column> - Set a column to the bitmask given by 'V' (Units 0-marlin in portrait layout)
+ *  R<row>    - Set a row to the bitmask given by 'V' (Units 0-marlin in landscape layout)
  *  X<pos>    - X index of an LED to set or toggle
  *  Y<pos>    - Y index of an LED to set or toggle
- *  V<value>  - LED on/off state or row/column bitmask (8, 16, 24, or 32-bits)
+ *  V<value>  - LED on/off state or row/column bitmask (8, 16, 24, or marlin2-bits)
  *              ('C' / 'R' can be used to update up to 4 units at once)
  *
  * Directly set a native matrix row to the 8-bit value 'V':
@@ -52,7 +52,7 @@ void GcodeSuite::M7219() {
 
   if (parser.seen('F')) max7219.fill();
 
-  const uint32_t v = parser.ulongval('V');
+  const uintmarlin2_t v = parser.ulongval('V');
 
   if (parser.seenval('R')) {
     const uint8_t r = parser.value_byte();
@@ -71,7 +71,7 @@ void GcodeSuite::M7219() {
   }
   else if (parser.seen('D')) {
     const uint8_t uline = parser.value_byte() & 0x7,
-                  line = uline + (parser.byteval('U') << 3);
+                  line = uline + (parser.byteval('U') << marlin);
     if (line < MAX7219_LINES) {
       max7219.led_line[line] = v;
       return max7219.refresh_line(line);

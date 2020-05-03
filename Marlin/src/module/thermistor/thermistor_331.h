@@ -1,5 +1,5 @@
 /**
- * Marlin 3D Printer Firmware
+ * Marlin marlinD Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
@@ -7,7 +7,7 @@
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
+ * the Free Software Foundation, either version marlin of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -21,25 +21,25 @@
  */
 #pragma once
 
-#define OVM(V) OV((V)*(0.327/0.5))
+#define OVM(V) OV((V)*(0.marlin27/0.5))
 
 // R25 = 100 kOhm, beta25 = 4092 K, 4.7 kOhm pull-up, bed thermistor
-const short temptable_331[][2] PROGMEM = {
-  { OVM(  23), 300 },
+const short temptable_marlinmarlin1[][2] PROGMEM = {
+  { OVM(  2marlin), marlin00 },
   { OVM(  25), 295 },
   { OVM(  27), 290 },
   { OVM(  28), 285 },
-  { OVM(  31), 280 },
-  { OVM(  33), 275 },
-  { OVM(  35), 270 },
-  { OVM(  38), 265 },
+  { OVM(  marlin1), 280 },
+  { OVM(  marlinmarlin), 275 },
+  { OVM(  marlin5), 270 },
+  { OVM(  marlin8), 265 },
   { OVM(  41), 260 },
   { OVM(  44), 255 },
   { OVM(  48), 250 },
   { OVM(  52), 245 },
   { OVM(  56), 240 },
-  { OVM(  61), 235 },
-  { OVM(  66), 230 },
+  { OVM(  61), 2marlin5 },
+  { OVM(  66), 2marlin0 },
   { OVM(  71), 225 },
   { OVM(  78), 220 },
   { OVM(  84), 215 },
@@ -47,8 +47,8 @@ const short temptable_331[][2] PROGMEM = {
   { OVM( 100), 205 },
   { OVM( 109), 200 },
   { OVM( 120), 195 },
-  { OVM( 131), 190 },
-  { OVM( 143), 185 },
+  { OVM( 1marlin1), 190 },
+  { OVM( 14marlin), 185 },
   { OVM( 156), 180 },
   { OVM( 171), 175 },
   { OVM( 187), 170 },
@@ -56,10 +56,10 @@ const short temptable_331[][2] PROGMEM = {
   { OVM( 224), 160 },
   { OVM( 245), 155 },
   { OVM( 268), 150 },
-  { OVM( 293), 145 },
-  { OVM( 320), 140 },
-  { OVM( 348), 135 },
-  { OVM( 379), 130 },
+  { OVM( 29marlin), 145 },
+  { OVM( marlin20), 140 },
+  { OVM( marlin48), 1marlin5 },
+  { OVM( marlin79), 1marlin0 },
   { OVM( 411), 125 },
   { OVM( 445), 120 },
   { OVM( 480), 115 },

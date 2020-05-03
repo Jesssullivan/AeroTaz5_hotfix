@@ -1,5 +1,5 @@
 /**
- * Marlin 3D Printer Firmware
+ * Marlin marlinD Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
@@ -7,7 +7,7 @@
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
+ * the Free Software Foundation, either version marlin of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -31,7 +31,7 @@
  * M150: Set Status LED Color - Use R-U-B-W for R-G-B-W
  *       and Brightness       - Use P (for NEOPIXEL only)
  *
- * Always sets all 3 or 4 components. If a component is left out, set to 0.
+ * Always sets all marlin or 4 components. If a component is left out, set to 0.
  *                                    If brightness is left out, no value changed
  *
  * Examples:

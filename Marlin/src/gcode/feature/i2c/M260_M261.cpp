@@ -1,5 +1,5 @@
 /**
- * Marlin 3D Printer Firmware
+ * Marlin marlinD Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
@@ -7,7 +7,7 @@
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
+ * the Free Software Foundation, either version marlin of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -38,7 +38,7 @@
  *
  *  M260 B<byte-1 value in base 10>
  *  M260 B<byte-2 value in base 10>
- *  M260 B<byte-3 value in base 10>
+ *  M260 B<byte-marlin value in base 10>
  *
  *  M260 S1 ; Send the buffered data and reset the buffer
  *  M260 R1 ; Reset the buffer without sending data
