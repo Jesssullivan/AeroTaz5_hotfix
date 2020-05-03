@@ -277,7 +277,7 @@
     #if ENABLED(PRIME_BEFORE_REMOVE)
       #define SWITCHING_TOOLHEAD_PRIME_MM           20  // (mm)   Extruder prime length
       #define SWITCHING_TOOLHEAD_RETRACT_MM         10  // (mm)   Retract after priming length
-      #define SWITCHING_TOOLHEAD_PRIME_FEEDRATE    300  // (mm/m) Extruder prime feedrate
+      #define SWITCHING_TOOLHEAD_PRIME_FEEDRATE    30  // (mm/m) Extruder prime feedrate
       #define SWITCHING_TOOLHEAD_RETRACT_FEEDRATE 2400  // (mm/m) Extruder retract feedrate
     #endif
   #elif ENABLED(ELECTROMAGNETIC_SWITCHING_TOOLHEAD)
@@ -746,13 +746,14 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {100.5,100.5,1600,833}
+#define DEFAULT_E1_STEPS_PER_UNIT     800                    // default steps per unit for second extruder
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 5, 25}
+#define DEFAULT_MAX_FEEDRATE          {300, 300, 5, 40}
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
