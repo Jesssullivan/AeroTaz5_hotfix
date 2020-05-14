@@ -121,14 +121,14 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 115200
+#define BAUDRATE 250000
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
 
 // Choose the name from //core/boards.h that matches your setup
 #ifndef MOTHERBOARD
-    #define MOTHERBOARD 1200  // switched to current rambo here, see /old.pins for previous port
+    #define MOTHERBOARD BOARD_RAMBO  // switched to current rambo here, see /old.pins for previous port
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -432,37 +432,37 @@
 //#define TEMP_SENSOR_1_AS_REDUNDANT
 #define MAX_REDUNDANT_TEMP_SENSOR_DIFF 10
 
-#define TEMP_RESIDENCY_TIME     8  // (seconds) Time to wait for hotend to "settle" in M109
+#define TEMP_RESIDENCY_TIME     7  // (seconds) Time to wait for hotend to "settle" in M109
 #define TEMP_WINDOW              4  // (°C) Temperature proximity for the "temperature reached" timer
 #define TEMP_HYSTERESIS          5  // (°C) Temperature proximity considered "close enough" to the target
 
 #define TEMP_BED_RESIDENCY_TIME 10  // (seconds) Time to wait for bed to "settle" in M190
 #define TEMP_BED_WINDOW          1  // (°C) Temperature proximity for the "temperature reached" timer
-#define TEMP_BED_HYSTERESIS      3  // (°C) Temperature proximity considered "close enough" to the target
+#define TEMP_BED_HYSTERESIS      10  // (°C) Temperature proximity considered "close enough" to the target
 
 // Below this temperature the heater will be switched off
 // because it probably indicates a broken thermistor wire.
-#define HEATER_0_MINTEMP   5
-#define HEATER_1_MINTEMP   5
-#define HEATER_2_MINTEMP   5
+#define HEATER_0_MINTEMP   10
+#define HEATER_1_MINTEMP   10
+#define HEATER_2_MINTEMP   10
 #define HEATER_3_MINTEMP   5
 #define HEATER_4_MINTEMP   5
 #define HEATER_5_MINTEMP   5
 #define HEATER_6_MINTEMP   5
 #define HEATER_7_MINTEMP   5
-#define BED_MINTEMP        5
+#define BED_MINTEMP        10
 
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 275
-#define HEATER_1_MAXTEMP 275
-#define HEATER_2_MAXTEMP 275
-#define HEATER_3_MAXTEMP 275
-#define HEATER_4_MAXTEMP 275
-#define HEATER_5_MAXTEMP 275
-#define HEATER_6_MAXTEMP 275
-#define HEATER_7_MAXTEMP 275
+#define HEATER_0_MAXTEMP 333
+#define HEATER_1_MAXTEMP 333
+#define HEATER_2_MAXTEMP 333
+#define HEATER_3_MAXTEMP 333
+#define HEATER_4_MAXTEMP 333
+#define HEATER_5_MAXTEMP 333
+#define HEATER_6_MAXTEMP 333
+#define HEATER_7_MAXTEMP 333
 #define BED_MAXTEMP      150
 
 //===========================================================================
@@ -745,8 +745,8 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {100.5,100.5,1600,833}
-#define DEFAULT_E1_STEPS_PER_UNIT     800                    // default steps per unit for second extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {100.5,100.5,1600,837}
+#define DEFAULT_E1_STEPS_PER_UNIT     837                    // default steps per unit for second extruder
 
 /**
  * Default Max Feed Rate (mm/s)
